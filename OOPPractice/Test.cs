@@ -69,6 +69,7 @@ namespace OOPPractice
             Gina.Sleep();
             Dezz.Sleep();
             Lava.Sleep();
+            Console.WriteLine();
 
             //***TEST HUMAN CLASS***
             Human Jones = new Male("Mike Jones", 34);
@@ -76,11 +77,23 @@ namespace OOPPractice
             Knowles.age = 26;
 
             Human[] workers = new Human[2];
-
             workers[0] = Knowles;
             workers[1] = Jones;
 
             Employees(workers);
+
+            Human Reyes = new Male("Sean Reyes", 28);
+            Male Smith = new Male("Devon Smith", 32);
+            Human Marshall = new Female("Britni Marshall", 23);
+            Female Swain = new Female("Ashley Swain", 41);
+
+            Human[] moreWorkers = new Human[] { Reyes, Smith, Marshall, Swain };
+            Employees(moreWorkers);
+
+            Marshall.Eat();
+            Smith.Shave();
+            Jones.Sleep();
+            Swain.Work("Teacher");
 
         }
     }
