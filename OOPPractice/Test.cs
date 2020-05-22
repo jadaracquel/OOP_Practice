@@ -24,6 +24,13 @@ namespace OOPPractice
                 theZoo[i].Walk();
             }
         }
+        public static void Employees(Human[] employees)
+        {
+            for (int i = 0; i < employees.Length; i++)
+            {
+                employees[i].Work();
+            }
+        }
         static void Main(string[] args)
         {
             //***TEST STUDENT CLASS***

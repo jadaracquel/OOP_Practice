@@ -42,7 +42,9 @@ namespace OOPPractice
         }
 
         public abstract void Work(string career);
-        public void Sleep()
+        public abstract void Work();
+
+        public virtual void Sleep()
         {
             Console.WriteLine("Sleeping like a human...");
         }
@@ -57,11 +59,19 @@ namespace OOPPractice
         }
         public override void Shave()
         {
-            Console.WriteLine("Shaving like a female...");
+            Console.WriteLine("Shaving like a lady...");
         }
         public override void Work(string job)
         {
-            Console.WriteLine("Female working as a " + job);
+            Console.WriteLine("Lady working as a " + job);
+        }
+        public override void Work()
+        {
+            Console.WriteLine("Lady working hard!");
+        }
+        public override void Sleep()
+        {
+            base.Sleep();
         }
 
     }
@@ -77,7 +87,15 @@ namespace OOPPractice
         }
         public override void Work(string job)
         {
-            Console.WriteLine("Male working as a " + job);
+            Console.WriteLine("Guy working as a " + job);
+        }
+        public override void Work()
+        {
+            Console.WriteLine("Guy working hard!");
+        }
+        public override void Sleep()
+        {
+            Console.WriteLine("Sleeping like a guy...");
         }
 
     }
