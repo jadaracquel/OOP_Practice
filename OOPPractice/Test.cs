@@ -69,6 +69,19 @@ namespace OOPPractice
             Gina.Sleep();
             Dezz.Sleep();
             Lava.Sleep();
+
+            //***TEST HUMAN CLASS***
+            Human Jones = new Male("Mike Jones", 34);
+            Female Knowles = new Female("Laila Knowles");
+            Knowles.age = 26;
+
+            Human[] workers = new Human[2];
+
+            workers[0] = Knowles;
+            workers[1] = Jones;
+
+            Employees(workers);
+
         }
     }
 }

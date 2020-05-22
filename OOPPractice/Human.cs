@@ -53,6 +53,8 @@ namespace OOPPractice
     public class Female : Human
     {
         public int femaleAge;
+        public Female(string nm) : base(nm) { }
+
         public Female(string nm, int age) : base(nm)
         {
             femaleAge = age;
